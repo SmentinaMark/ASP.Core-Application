@@ -37,7 +37,7 @@ namespace ASP.Core_Application
 
             services.AddMvc();
 
-            services.AddSingleton<IToDoItemService, FakeToDoItemService>(); //add service
+            services.AddScoped<IToDoItemService, ToDoItemService>(); //add service
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
