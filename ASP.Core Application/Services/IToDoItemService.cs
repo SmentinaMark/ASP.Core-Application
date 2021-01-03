@@ -10,5 +10,7 @@ namespace ASP.Core_Application.Services
     {
         Task<ToDoItem[]> GetIncompleteItemsAsync();
         Task<bool> AddItemAsync(ToDoItem newItem);
+
+        Task<bool> MarkDoneAsync(Guid it);
     }
 }
